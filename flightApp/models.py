@@ -10,7 +10,7 @@ class Flight(TimeStampModel):
     departureCity            = models.CharField(max_length=20)
     arriveCity               = models.CharField(max_length=20)
     dateOfDeparture          = models.DateField()
-    estimatedTimeOfDeparture = models.DateTimeField()
+    estimatedTimeOfDeparture = models.TimeField()
 
 
 class Passenger(TimeStampModel):
